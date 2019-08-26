@@ -274,7 +274,6 @@ class AMP_Analytics_Options_Test extends WP_UnitTestCase {
 			'amp_analytics_entries',
 			static function( $analytics ) use ( $key ) {
 				$analytics[ $key ]['attributes']['data-include'] = '_till_responded';
-				$analytics[ $key ]['attributes']['data-block-on-consent'] = 'credentials';
 				return $analytics;
 			}
 		);
